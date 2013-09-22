@@ -17,12 +17,11 @@
 					<div class="share-con">
 						<div><img src="images/dp3_img_2.jpg" class="block" /></div>
 						<div class="share_daren">
-							<h3 class="touren1"><strong>149</strong>票</h3>
-							<h3 class="touren2"><strong>149</strong>票</h3>
-							<h3 class="touren3"><strong>149</strong>票</h3>
-							<a href="#user1" class="share_more1"></a>
-							<a href="index3.html" class="share_more2"></a>
-							<a href="index3.html" class="share_more3"></a>
+                            {{#each peoples1}}
+                              <h3 class="touren{{n}}"><strong>{{voteCount}}</strong>票</h3>
+                              <a href="/p#{{name}}" class="share_more{{n}}"></a>
+                            {{/each}}
+
 						</div>
 						<div><img src="images/dp3_img_4.jpg" class="block" /></div>
 						<div class="share_daren2">

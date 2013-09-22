@@ -26,6 +26,7 @@ VoteRouter = Backbone.Router.extend({
       Session.set('currentView', 'index4');
     },
     detail: function(personName) {
+      console.log('detail');
       Session.set('currentView', 'detail');
       Session.set('currentPersion', personName);
     }
@@ -54,6 +55,10 @@ Template.index2.show = function() {
 
 Template.index3.show = function() {
   return ifViewing("index3")
+}
+
+Template.index3.peoples1 = function() {
+  return People.find({'type': 1});
 }
 
 Template.index3.rendered = function() {
@@ -131,7 +136,11 @@ Template.index3.rendered = function() {
 }
 
 Template.index4.show = function() {
-  return ifViewing("index4")
+  return ifViewing("index4");
+}
+
+Template.detail.show = function() {
+  return ifViewing("detail");
 }
 
 
