@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>INDEX</title>
+<link rel="stylesheet" type="text/css" href="css/css.css" />
+<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+<script src="js/jquery-ui-1.8.16.custom.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/DD_belatedPNG.js"></script>
+</head>
+
+<body>
+<div id="dp_wrapper">
+	<div id="nav">
+		<ul>
+		    <li><a href="index.html" class="deletes">指尖烟熏时代</a></li>
+			<li><a href="longwear_cream_shadow_stick.html">缤纷眸色搭配</a></li>
+			<li class="you_here"><a href="mua.html">票选心动双眸</a></li>
+			<li><a href="longwear.html">完美眼妆搭配</a></li>
+		</ul>
+	</div>
+	<!--nav end-->
+	<div class="main">
+		<div id="share-main">
+			<div><img src="images/dp3_img_1.jpg" class="block" /></div>
+			<div id="share-content">
+				<div id="share-block" class="clearfix">
+					<div class="share-con">
+						<div><img src="images/dp3_img_2.jpg" class="block" /></div>
+						<div class="share_daren">
+							<h3 class="touren1"><strong>149</strong>票</h3>
+							<h3 class="touren2"><strong>149</strong>票</h3>
+							<h3 class="touren3"><strong>149</strong>票</h3>
+							<a href="index3.html" class="share_more1"></a>
+							<a href="index3.html" class="share_more2"></a>
+							<a href="index3.html" class="share_more3"></a>
+						</div>
+						<div><img src="images/dp3_img_4.jpg" class="block" /></div>
+						<div class="share_daren2">
+							<h3 class="touren4"><strong>149</strong>票</h3>
+							<h3 class="touren5"><strong>149</strong>票</h3>
+							<h3 class="touren6"><strong>149</strong>票</h3>
+							<a href="index3.html" class="share_more4"></a>
+							<a href="index3.html" class="share_more5"></a>
+							<a href="index3.html" class="share_more6"></a>
+						</div>
+					</div>
+					<div class="share-con">
+						<div><img src="images/dp3_img_6.jpg" class="block" /></div>
+						<div class="share_daren3">
+							<h3 class="touren7"><strong>149</strong>票</h3>
+							<h3 class="touren8"><strong>149</strong>票</h3>
+							<h3 class="touren9"><strong>149</strong>票</h3>
+							<a href="index3.html" class="share_more7"></a>
+							<a href="index3.html" class="share_more8"></a>
+							<a href="index3.html" class="share_more9"></a>
+						</div>
+						<div><img src="images/dp3_img_8.jpg" class="block" /></div>
+						<div class="share_daren4">
+							<h3 class="touren10"><strong>149</strong>票</h3>
+							<h3 class="touren11"><strong>149</strong>票</h3>
+							<h3 class="touren12"><strong>149</strong>票</h3>
+							<a href="index3.html" class="share_more10"></a>
+							<a href="index3.html" class="share_more11"></a>
+							<a href="index3.html" class="share_more12"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="scrollLine">
+				<div id="scrollBar"></div>
+			</div>
+		</div>
+
+	</div>
+</div>
+<script type="text/javascript">
+
+var decimal = function(num,v){
+    var vv = Math.pow(10,v);
+    return Math.round(num*vv)/vv;
+}
+
+var popAction = new function(){
+	var self = this;
+	self.db = $("<div>").attr("id","popBg").appendTo($("body"));
+	self.dc = $("<div>").attr("id","popContent").addClass("fixed-top").appendTo($("body"));
+
+	self.pop = function(num){
+		var w = $(window).width();
+		var h = $("body").height();
+
+		var l = (w-637)/2;
+		var t = ($(window).height()-455)/2;
+
+		self.db.css({"height":h,"width":w});
+		self.dc.css({"top":t,"left":l})
+		var d = $("<div>").addClass("relative").appendTo(self.dc);
+		var img = $("<img>").attr("src","images/pop0"+num+".jpg").appendTo(d);
+		var close = $("<span>").attr("id","popClose").appendTo(d);
+		close.bind("click",function(){
+			self.dc.html("").hide();
+			self.db.hide();
+		})
+		self.dc.show();
+		self.db.show();
+	}
+}
+
+var dragMotion = function(){
+	var self = this;
+
+	self.moveTo = function(n){
+		var m = (blockW-mainW)*-1;
+		var i = n/lineW*m;
+		var w = decimal(i,0);
+		$('#share-block').css("left",w);
+	}
+}
+
+var blockW = 1900;
+var mainW = 950;
+var barW = 280;
+var lineW = 950-280;
+
+$(document).ready(function(){
+
+	sd = new dragMotion();
+	$("#scrollBar").draggable({
+		containment: 'parent',
+		drag: function(event, ui){
+			var l = parseInt($(this).css("left"));
+			sd.moveTo(l);
+		}
+	});
+
+})
+
+$(function(){
+	GaAgent.indexPage();
+	$.browser.msie && $.browser.version=="6.0" &&
+	$("#nav a:not(.on)").each(function(){
+		var dom=this;
+		DD_belatedPNG.fixPng(this);
+	}) && $(".on").each(function(){
+		$(this).parent().addClass("over4");
+		DD_belatedPNG.fixPng(this);
+	});
+});
+</script>
+</body>
+</html>
