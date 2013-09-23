@@ -3,6 +3,18 @@ function ifViewing(viewname) {
   return Session.get("currentView") == viewname;
 }
 
+function addVoteTracker(t) {
+  var votes = Session.get("voteTracker");
+  if (!votes) {
+    votes = [];
+  }
+  console.log('votes', (typeof votes));
+  votes.push(t);
+  Session.set("voteTracker", votes);
+}
+
+
+
 
 // for four index page.
 
@@ -123,8 +135,11 @@ Template.user1.p = function() {
 Template.user1.events({
   'click #btnVote' : function (e, t) {
      var id = e.currentTarget.getAttribute("uid");
+     var uname = e.currentTarget.getAttribute("uname");
      console.log(id);
      Meteor.call("incVote", id);
+     addVoteTracker(uname);
+     Backbone.history.navigate("/feedback", true);
   }
 });
 
@@ -172,3 +187,39 @@ Template.user11.show = function() {
 Template.user12.show = function() {
   return ifViewing("user12");
 }
+
+Template.feedback.show = function() {
+  return ifViewing("feedback");
+}
+
+Template.feedback.events({
+  'click .subbotton': function(e, t) {
+     var name = t.find("#name").value;
+     var mobile = t.find("#mobile").value;
+     var city = t.find("#city").value;
+     Meteor.call("addFeedBack", name, mobile, city, Session.get("voteTracker"));
+     Session.set("voteTracker", []);
+     Backbone.history.navigate("/success", true);
+  },
+
+  'click .close': function(e, t) {
+     console.log("currentPerson", Session.get("currentPersion"));
+     Backbone.history.navigate("/#" + Session.get("currentPersion"), true);
+     e.preventDefault();
+  },
+
+});
+
+
+
+Template.success.show = function() {
+  return ifViewing("success");
+}
+
+Template.success.events({
+  'click .close': function(e, t) {
+     console.log("currentPerson", Session.get("currentPersion"));
+     Backbone.history.navigate("/#" + Session.get("currentPersion"), true);
+     e.preventDefault();
+  }
+});

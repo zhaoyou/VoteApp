@@ -13,7 +13,7 @@ Meteor.methods({
     People.update({_id: id}, {$inc: {'voteCount': 1}});
   },
 
-  'addFeedBack': function(name, city, phone, votes) {
+  'addFeedBack': function(name, phone, city, votes) {
     Feedback.insert({
      'name' :  name,
      'phone':  city,

@@ -13,6 +13,11 @@
 <body>
 <div id="dp_wrapper">
 		<!--nav end-->
+  {{> main}}
+</div>
+</body>
+
+<template name="main">
   {{> index}}
   {{> index2}}
   {{> index3}}
@@ -29,8 +34,10 @@
   {{> user10}}
   {{> user11}}
   {{> user12}}
-</div>
-</body>
+  {{> feedback}}
+  {{> success}}
+
+</template>
 
 <template name="index">
   {{#if show}}
