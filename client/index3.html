@@ -25,32 +25,26 @@
 						</div>
 						<div><img src="images/dp3_img_4.jpg" class="block" /></div>
 						<div class="share_daren2">
-							<h3 class="touren4"><strong>149</strong>票</h3>
-							<h3 class="touren5"><strong>149</strong>票</h3>
-							<h3 class="touren6"><strong>149</strong>票</h3>
-							<a href="index3.html" class="share_more4"></a>
-							<a href="index3.html" class="share_more5"></a>
-							<a href="index3.html" class="share_more6"></a>
+                            {{#each peoples2}}
+                              <h3 class="touren{{n}}"><strong>{{voteCount}}</strong>票</h3>
+                              <a href="/p#{{name}}" class="share_more{{n}}"></a>
+                            {{/each}}
 						</div>
 					</div>
 					<div class="share-con">
 						<div><img src="images/dp3_img_6.jpg" class="block" /></div>
 						<div class="share_daren3">
-							<h3 class="touren7"><strong>149</strong>票</h3>
-							<h3 class="touren8"><strong>149</strong>票</h3>
-							<h3 class="touren9"><strong>149</strong>票</h3>
-							<a href="index3.html" class="share_more7"></a>
-							<a href="index3.html" class="share_more8"></a>
-							<a href="index3.html" class="share_more9"></a>
+                            {{#each peoples3}}
+                              <h3 class="touren{{n}}"><strong>{{voteCount}}</strong>票</h3>
+                              <a href="/p#{{name}}" class="share_more{{n}}"></a>
+                            {{/each}}
 						</div>
 						<div><img src="images/dp3_img_8.jpg" class="block" /></div>
 						<div class="share_daren4">
-							<h3 class="touren10"><strong>149</strong>票</h3>
-							<h3 class="touren11"><strong>149</strong>票</h3>
-							<h3 class="touren12"><strong>149</strong>票</h3>
-							<a href="index3.html" class="share_more10"></a>
-							<a href="index3.html" class="share_more11"></a>
-							<a href="index3.html" class="share_more12"></a>
+                            {{#each peoples4}}
+                              <h3 class="touren{{n}}"><strong>{{voteCount}}</strong>票</h3>
+                              <a href="/p#{{name}}" class="share_more{{n}}"></a>
+                            {{/each}}
 						</div>
 					</div>
 				</div>

@@ -1,43 +1,4 @@
 
-Meteor.subscribe("people", 1)
-Meteor.subscribe("people", 2)
-Meteor.subscribe("people", 3)
-Meteor.subscribe("people", 4)
-
-VoteRouter = Backbone.Router.extend({
-     routes: {
-        '':'index',
-        'index':'index',
-        'index2':'index2',
-        'index3':'index3',
-        'index4':'index4',
-        ':personName': 'detail'
-     },
-    index: function() {
-      Session.set('currentView', 'index');
-    },
-    index2: function() {
-      Session.set('currentView', 'index2');
-    },
-    index3: function() {
-      Session.set('currentView', 'index3');
-    },
-    index4: function() {
-      Session.set('currentView', 'index4');
-    },
-    detail: function(personName) {
-      console.log('detail');
-      Session.set('currentView', 'detail');
-      Session.set('currentPersion', personName);
-    }
-});
-
-Meteor.startup(function(){
-  new VoteRouter();
-  Backbone.history.start(true);
-});
-
-
 function ifViewing(viewname) {
   return Session.get("currentView") == viewname;
 }
@@ -58,7 +19,19 @@ Template.index3.show = function() {
 }
 
 Template.index3.peoples1 = function() {
-  return People.find({'type': 1});
+  return People.find({'type': 1}, {sort: {n: 1}});
+}
+
+Template.index3.peoples2 = function() {
+  return People.find({'type': 2}, {sort: {n: 1}});
+}
+
+Template.index3.peoples3 = function() {
+  return People.find({'type': 3}, {sort: {n: 1}});
+}
+
+Template.index3.peoples4 = function() {
+  return People.find({'type': 4}, {sort: {n: 1}});
 }
 
 Template.index3.rendered = function() {
@@ -139,25 +112,63 @@ Template.index4.show = function() {
   return ifViewing("index4");
 }
 
-Template.detail.show = function() {
-  return ifViewing("detail");
+Template.user1.show = function() {
+  return ifViewing("user1");
+}
+
+Template.user1.p = function() {
+  return People.findOne({name: Session.get("currentPersion")});
+}
+
+Template.user1.events({
+  'click #btnVote' : function (e, t) {
+     var id = e.currentTarget.getAttribute("uid");
+     console.log(id);
+     Meteor.call("incVote", id);
+  }
+});
+
+Template.user2.show = function() {
+  return ifViewing("user2");
 }
 
 
+Template.user3.show = function() {
+  return ifViewing("user3");
+}
 
+Template.user4.show = function() {
+  return ifViewing("user4");
+}
 
-//Template.people1.peoples = function() {
-//  return People.find({'type': 1});
-//}
-//
-//Template.people2.peoples = function() {
-//  return People.find({'type': 2});
-//}
-//
-//Template.people3.peoples = function() {
-//  return People.find({'type': 3});
-//}
-//
-//Template.people4.peoples = function() {
-//  return People.find({'type': 4});
-//}
+Template.user5.show = function() {
+  return ifViewing("user5");
+}
+
+Template.user6.show = function() {
+  return ifViewing("user6");
+}
+
+Template.user7.show = function() {
+  return ifViewing("user7");
+}
+
+Template.user8.show = function() {
+  return ifViewing("user8");
+}
+
+Template.user9.show = function() {
+  return ifViewing("user9");
+}
+
+Template.user10.show = function() {
+  return ifViewing("user10");
+}
+
+Template.user11.show = function() {
+  return ifViewing("user11");
+}
+
+Template.user12.show = function() {
+  return ifViewing("user12");
+}

@@ -3,6 +3,10 @@ Meteor.publish("people", function(t) {
   return People.find({'type': t});
 });
 
+Meteor.publish("singlePeople", function(name) {
+  return People.findOne({'name': name});
+});
+
 
 Meteor.methods({
   'incVote':  function(id) {
