@@ -2,19 +2,29 @@
   {{#if show}}
     <div id="nav">
 		<ul>
-		    <li><a href="#" class="deletes">指尖烟熏时代</a></li>
-			<li class="you_here2"><a href="#index2">缤纷眸色搭配</a></li>
-			<li><a href="#index3"><img src="images/starts.gif" border="0" />票选心动双眸</a></li>
-			<li class="deletes"><a href="#index4" class="width239">完美眼妆搭配</a></li>
+		    <li><a href="#index" class="deletes" onclick="_gaq.push(['_trackEvent','cloudproduct','cloudnav1',,,false]);
+_hmt.push(['_trackEvent','cloudproduct','cloudnav1','','']);">指尖烟熏时代</a></li>
+			<li class="you_here2"><a href="#index2" onclick="_gaq.push(['_trackEvent','cloudproduct','cloudnav2',,,false]);
+_hmt.push(['_trackEvent','cloudproduct','cloudnav2','','']);">缤纷眸色搭配</a></li>
+			<li><a href="#index3" onclick="_gaq.push(['_trackEvent','cloudproduct','cloudnav3',,,false]);
+_hmt.push(['_trackEvent','cloudproduct','cloudnav3','','']);"><img src="images/starts.gif" border="0" />票选心动双眸</a></li>
+			<li class="deletes"><a href="#index4" class="width239" onclick="_gaq.push(['_trackEvent','cloudproduct','cloudnav4',,,false]);
+_hmt.push(['_trackEvent','cloudproduct','cloudnav4','','']);">完美眼妆搭配</a></li>
 		</ul>
 	</div>
 	<!--nav end-->
 	<div class="main">
 		<div><img src="images/dp2_img_1.jpg" /></div>
 		<div><img src="images/dp2_img_2.jpg" /></div>
-		<div><img src="images/dp2_img_3.jpg" /></div>
-		<div><img src="images/dp2_img_4.jpg" /></div>
+		<div><img src="images/dp2_img_3.jpg" border="0" usemap="#Map" /></div>
+		<div><img src="images/dp2_img_4.jpg" border="0" usemap="#Map2" /></div>
 	</div>
+    <map name="Map" id="Map">
+        <area shape="rect" coords="6,4,941,298" href="#" target="_blank" />
+    </map>
+    <map name="Map2" id="Map2">
+        <area shape="rect" coords="7,3,944,313" href="#" target="_blank" />
+    </map>
   {{/if}}
 </template>
 
