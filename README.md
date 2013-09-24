@@ -1,0 +1,4 @@
+VoteApp
+=======
+
+meteor build VoteAPP
