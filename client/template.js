@@ -47,8 +47,41 @@ Template.index.rendered = function() {
     }).mouseout(function() {
       $(".contrast .czsbg4").hide();
     })
-  })
+  });
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-530472-46']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = ""//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c"";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
 }
+
+Template.index.events({
+  'click .rules': function(e, t) {
+     var t = e.currentTarget.title || e.currentTarget.name || null;
+	 var a = e.currentTarget.href || e.currentTarget.alt;
+	 var g = e.currentTarget.rel || false;
+	 tb_show(t,a,g);
+     e.currentTarget.blur();
+     e.preventDefault();
+
+     $("#TB_window .closex").click(function(){
+        tb_remove();
+     });
+  }
+});
 
 Template.index2.show = function() {
   return ifViewing("index2")
