@@ -15,8 +15,8 @@
 		<ul>
 		    <li><a href="index.html" class="deletes">指尖烟熏时代</a></li>
 			<li><a href="longwear_cream_shadow_stick.html">缤纷眸色搭配</a></li>
-			<li class="you_here"><a href="mua.html">票选心动双眸</a></li>
-			<li><a href="longwear.html">完美眼妆搭配</a></li>
+			<li class="you_here"><a href="mua.html"><img src="images/starts_bai.gif" border="0" />票选心动双眸</a></li>
+			<li><a href="longwear.html" class="width239">完美眼妆搭配</a></li>
 		</ul>
 	</div>
 	<!--nav end-->
@@ -71,7 +71,7 @@
 				<div id="scrollBar"></div>
 			</div>
 		</div>
-
+		
 	</div>
 </div>
 <script type="text/javascript">
@@ -85,14 +85,14 @@ var popAction = new function(){
 	var self = this;
 	self.db = $("<div>").attr("id","popBg").appendTo($("body"));
 	self.dc = $("<div>").attr("id","popContent").addClass("fixed-top").appendTo($("body"));
-
+	
 	self.pop = function(num){
 		var w = $(window).width();
 		var h = $("body").height();
-
+		
 		var l = (w-637)/2;
 		var t = ($(window).height()-455)/2;
-
+		
 		self.db.css({"height":h,"width":w});
 		self.dc.css({"top":t,"left":l})
 		var d = $("<div>").addClass("relative").appendTo(self.dc);
@@ -109,7 +109,7 @@ var popAction = new function(){
 
 var dragMotion = function(){
 	var self = this;
-
+	
 	self.moveTo = function(n){
 		var m = (blockW-mainW)*-1;
 		var i = n/lineW*m;
@@ -133,19 +133,19 @@ $(document).ready(function(){
 			sd.moveTo(l);
 		}
 	});
-
+	
 })
 
 $(function(){
 	GaAgent.indexPage();
-	$.browser.msie && $.browser.version=="6.0" &&
-	$("#nav a:not(.on)").each(function(){
+	$.browser.msie && $.browser.version=="6.0" && 
+	$("#nav a:not(.on)").each(function(){	
 		var dom=this;
-		DD_belatedPNG.fixPng(this);
+		DD_belatedPNG.fixPng(this); 
 	}) && $(".on").each(function(){
 		$(this).parent().addClass("over4");
 		DD_belatedPNG.fixPng(this);
-	});
+	});		
 });
 </script>
 </body>

@@ -8,7 +8,6 @@ function addVoteTracker(t) {
   if (!votes) {
     votes = [];
   }
-  console.log('votes', (typeof votes));
   votes.push(t);
   Session.set("voteTracker", votes);
 }
@@ -136,12 +135,37 @@ Template.user1.events({
   'click #btnVote' : function (e, t) {
      var id = e.currentTarget.getAttribute("uid");
      var uname = e.currentTarget.getAttribute("uname");
-     console.log(id);
      Meteor.call("incVote", id);
      addVoteTracker(uname);
-     Backbone.history.navigate("/feedback", true);
-  }
+     var t = e.currentTarget.title || e.currentTarget.name || null;
+	 var a = e.currentTarget.href || e.currentTarget.alt;
+	 var g = e.currentTarget.rel || false;
+	 tb_show(t,a,g);
+     e.currentTarget.blur();
+     e.preventDefault();
+     // TODO (hacker, add subbuton, cancel, share click event, Show div isn't in Template User)
+     $("#TB_window .subbotton").click(function(){
+       var name = $("#TB_window #name").val();
+       var mobile = $("#TB_window #mobile").val();
+       var city = $("#TB_window #city").val();
+       console.log("name, mobile, city: " + name, mobile, city);
+       Meteor.call("addFeedBack", name, mobile, city, Session.get("voteTracker"));
+       Session.set("voteTracker", []);
+       $(".form_con").hide();
+	   $(".form_success").show();
+
+     });
+
+     $("#TB_window .closex").click(function(){
+        tb_remove();
+     });
+  },
 });
+
+
+Template.user1.rendered = function() {
+
+}
 
 Template.user2.show = function() {
   return ifViewing("user2");
@@ -199,7 +223,7 @@ Template.feedback.events({
      var city = t.find("#city").value;
      Meteor.call("addFeedBack", name, mobile, city, Session.get("voteTracker"));
      Session.set("voteTracker", []);
-     Backbone.history.navigate("/success", true);
+     //Backbone.history.navigate("/success", true);
   },
 
   'click .close': function(e, t) {
