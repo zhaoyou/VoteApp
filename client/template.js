@@ -77,7 +77,7 @@ Template.index.events({
      e.currentTarget.blur();
      e.preventDefault();
 
-     $("#TB_window .closex").click(function(){
+     $("#TB_window .guize_close").click(function(){
         tb_remove();
      });
   }
