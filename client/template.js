@@ -245,8 +245,6 @@ Template.index4.rendered = function() {
     var s = document.getElementsByTagName("script")[0];
     s.parentNode.insertBefore(hm, s);
   })();
-
-
 }
 
 Template.user1.show = function() {
@@ -288,6 +286,25 @@ Template.user1.events({
   },
 });
 
+Template.user1.rendered = function() {
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-530472-46']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = ""//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c"";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+}
 
 Template.user2.show = function() {
   return ifViewing("user2");
@@ -328,7 +345,25 @@ Template.user2.events({
   },
 });
 
+Template.user2.rendered = function() {
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-530472-46']);
+  _gaq.push(['_trackPageview']);
 
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = ""//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c"";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+}
 
 Template.user3.show = function() {
   return ifViewing("user3");
@@ -369,7 +404,25 @@ Template.user3.events({
   },
 });
 
+Template.user3.rendered = function() {
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-530472-46']);
+  _gaq.push(['_trackPageview']);
 
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = ""//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c"";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+}
 
 Template.user4.show = function() {
   return ifViewing("user4");
@@ -410,7 +463,25 @@ Template.user4.events({
   },
 });
 
+Template.user4.rendered = function() {
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-530472-46']);
+  _gaq.push(['_trackPageview']);
 
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = ""//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c"";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+}
 Template.user5.show = function() {
   return ifViewing("user5");
 }
@@ -450,7 +521,25 @@ Template.user5.events({
   },
 });
 
+Template.user5.rendered = function() {
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-530472-46']);
+  _gaq.push(['_trackPageview']);
 
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = ""//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c"";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+}
 Template.user6.show = function() {
   return ifViewing("user6");
 }
@@ -490,7 +579,25 @@ Template.user6.events({
   },
 });
 
+Template.user6.rendered = function() {
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-530472-46']);
+  _gaq.push(['_trackPageview']);
 
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = ""//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c"";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+}
 
 Template.user7.show = function() {
   return ifViewing("user7");
@@ -530,7 +637,25 @@ Template.user7.events({
   },
 });
 
+Template.user7.rendered = function() {
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-530472-46']);
+  _gaq.push(['_trackPageview']);
 
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = ""//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c"";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+}
 Template.user8.show = function() {
   return ifViewing("user8");
 }
@@ -569,7 +694,25 @@ Template.user8.events({
   },
 });
 
+Template.user8.rendered = function() {
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-530472-46']);
+  _gaq.push(['_trackPageview']);
 
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = ""//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c"";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+}
 Template.user9.show = function() {
   return ifViewing("user9");
 }
@@ -608,7 +751,25 @@ Template.user9.events({
   },
 });
 
+Template.user9.rendered = function() {
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-530472-46']);
+  _gaq.push(['_trackPageview']);
 
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = ""//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c"";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+}
 Template.user10.show = function() {
   return ifViewing("user10");
 }
@@ -646,7 +807,25 @@ Template.user10.events({
      });
   },
 });
+Template.user10.rendered = function() {
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-530472-46']);
+  _gaq.push(['_trackPageview']);
 
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = ""//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c"";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+}
 
 Template.user11.show = function() {
   return ifViewing("user11");
@@ -686,6 +865,25 @@ Template.user11.events({
   },
 });
 
+Template.user11.rendered = function() {
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-530472-46']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = ""//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c"";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+}
 
 Template.user12.show = function() {
   return ifViewing("user12");
@@ -725,40 +923,23 @@ Template.user12.events({
   },
 });
 
+Template.user12.rendered = function() {
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-530472-46']);
+  _gaq.push(['_trackPageview']);
 
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
 
-Template.feedback.show = function() {
-  return ifViewing("feedback");
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = ""//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c"";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
 }
 
-Template.feedback.events({
-  'click .subbotton': function(e, t) {
-     var name = t.find("#name").value;
-     var mobile = t.find("#mobile").value;
-     var city = t.find("#city").value;
-     Meteor.call("addFeedBack", name, mobile, city, Session.get("voteTracker"));
-     Session.set("voteTracker", []);
-     //Backbone.history.navigate("/success", true);
-  },
-
-  'click .close': function(e, t) {
-     console.log("currentPerson", Session.get("currentPersion"));
-     Backbone.history.navigate("/#" + Session.get("currentPersion"), true);
-     e.preventDefault();
-  },
-
-});
-
-
-
-Template.success.show = function() {
-  return ifViewing("success");
-}
-
-Template.success.events({
-  'click .close': function(e, t) {
-     console.log("currentPerson", Session.get("currentPersion"));
-     Backbone.history.navigate("/#" + Session.get("currentPersion"), true);
-     e.preventDefault();
-  }
-});

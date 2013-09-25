@@ -12,8 +12,6 @@ VoteRouter = Backbone.Router.extend({
         'index2':'index2',
         'index3':'index3',
         'index4':'index4',
-        'feedback': 'feedback',
-        'success': 'success',
         ':personName': 'detail'
      },
     index: function() {
@@ -27,12 +25,6 @@ VoteRouter = Backbone.Router.extend({
     },
     index4: function() {
       Session.set('currentView', 'index4');
-    },
-    feedback: function() {
-      Session.set('currentView', 'feedback');
-    },
-    success: function() {
-      Session.set('currentView', 'success');
     },
     detail: function(personName) {
       console.log('detail');
