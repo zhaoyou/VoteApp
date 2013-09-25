@@ -1,60 +1,81 @@
 <template name="user8">
   {{#if show}}
     <div id="nav">
-          <ul>
-              <li><a href="#index" class="deletes">指尖烟熏时代</a></li>
-              <li><a href="#index2">缤纷眸色搭配</a></li>
-              <li class="you_here"><a href="#index3">票选心动双眸</a></li>
-              <li class="deletes"><a href="#index4">完美眼妆搭配</a></li>
-          </ul>
-      </div>
-      <!--nav end-->
-      <div class="main">
-          <div class="toupiao">
-            <h3><strong>{{p.voteCount}}</strong>票</h3>
-            <a id="btnVote" class="voteta thickbox" href="#TB_inline?height=390&width=649&inlineId=a1&modal=true" uid="{{p._id}}" uname="{{p.nickname}}"></a>
-			<!--<a href="#TB_inline?height=390&width=649&inlineId=a1&modal=true" class="voteta thickbox"></a>
-            -->
-          </div>
-          <div><img src="images/dp3_detail_img_2.jpg" /></div>
-          <div><img src="images/dp3_detail_img_3.jpg" /></div>
-          <div><img src="images/dp3_detail_img_4.jpg" /></div>
-      </div>
+		<ul>
+		    <li><a href="#index" class="deletes" onclick="_gaq.push(['_trackEvent','cloudproduct','cloudnav1',,,false]);
+_hmt.push(['_trackEvent','cloudproduct','cloudnav1','','']);">指尖烟熏时代</a></li>
+			<li><a href="#index2" onclick="_gaq.push(['_trackEvent','cloudproduct','cloudnav2',,,false]);
+_hmt.push(['_trackEvent','cloudproduct','cloudnav2','','']);">缤纷眸色搭配</a></li>
+			<li class="you_here2"><a href="#index3" onclick="_gaq.push(['_trackEvent','cloudproduct','cloudnav3',,,false]);
+_hmt.push(['_trackEvent','cloudproduct','cloudnav3','','']);"><img src="images/starts_bai.gif" border="0" />票选心动双眸</a></li>
+			<li class="deletes"><a href="#index4" class="width239" onclick="_gaq.push(['_trackEvent','cloudproduct','cloudnav4',,,false]);
+_hmt.push(['_trackEvent','cloudproduct','cloudnav4','','']);">完美眼妆搭配</a></li>
+		</ul>
+	</div>
+	<!--nav end-->
+	<div class="main">
+		<div class="toupiao8">
+			<h3><strong>{{p.voteCount}}</strong>票</h3>
+			<a href="#TB_inline?height=390&width=649&inlineId=a1&modal=true" id="btnVote"  uid="{{p._id}}" uname="{{p.nickname}}" class="voteta thickbox" onclick="_gaq.push(['_trackEvent','cloudcam','cloudvote',,,false]);
+_hmt.push(['_trackEvent','cloudcam','cloudvote','','']);"></a>
+			<a href="#TB_inline?height=489&width=649&inlineId=a2&modal=true" class="icon thickbox"></a>
+		</div>
+		<div><img src="images/dp3_detail8_img_2.jpg" border="0" usemap="#Map" />
+<map name="Map" id="Map"><area shape="rect" coords="94,61,338,92" href="http://www.bobbibrown.com.cn/cms/landing/whatsnew/zhexia/index.tmpl" target="_blank" />
+<area shape="rect" coords="343,61,444,90" href="http://www.bobbibrown.com.cn/product/2324/8166/index.tmpl" target="_blank" />
+<area shape="rect" coords="93,94,287,118" href="http://www.bobbibrown.com.cn/product/8686/22257/index.tmpl" target="_blank" />
+<area shape="rect" coords="342,92,515,118" href="http://dev.bobbibrown.cn.cntel.perlgem.esteeonline.com/product/2330/24845/index.tmpl" target="_blank" />
+<area shape="rect" coords="93,118,326,147" href="http://www.bobbibrown.com.cn/product/8686/21690/index.tmpl" target="_blank" />
+<area shape="rect" coords="343,119,508,145" href="http://dev.bobbibrown.cn.cntel.perlgem.esteeonline.com/product/2330/24845/index.tmpl" target="_blank" />
+<area shape="rect" coords="94,147,262,175" href="http://www.bobbibrown.com.cn/product/2342/22640/index.tmpl" target="_blank" />
+<area shape="rect" coords="341,146,463,172" href="http://dev.bobbibrown.cn.cntel.perlgem.esteeonline.com/product/2328/7785/index.tmpl" target="_blank" />
+<area shape="rect" coords="93,175,182,201" href="http://www.bobbibrown.com.cn/product/2281/22117/index.tmpl" target="_blank" />
+</map></div>
+		<div><img src="images/dp3_detail8_img_3.jpg" /></div>
+		<div><img src="images/dp3_detail8_img_4.jpg" /></div>
+	</div>
+</div>
+<div id="a1">
+	<div class="conform_bg">
+	<div class="closex" ><a href="javascript:;"><img src="images/closex.jpg" /></a></div>
+	<div class="form_con">
+		<h2>投票成功！</h2>
+		<div class="text_wenzi">填写资料参与抽奖赢<span>专属妆容打造</span>及新品<span>流云眼影笔</span>！</div>
+		<div class="form_box">
+			<div>
+				<label>姓名：</label>
+				<input type="text" id="name" class="textInput" value="" />
+			</div>
+			<div>
+				<label>手机：</label>
+				<input type="text" id="mobile" class="textInput" value="" />
+			</div>
+			<div>
+				<label>城市：</label>
+				<input type="text" id="city" class="textInput" value="" />
+			</div>
+			<div>
+				<label>&nbsp;</label>
+				<input type="submit" class="subbotton" value="提交" />
+			</div>
+		</div>
+	</div>
+	<div class="error1">请输入您的姓名</div>
+	<div class="error2">请输入您的手机号码</div>
+	<div class="error3">请输入您所在的城市</div>
+	<div class="form_success">
+			<h2>提交成功！</h2>
+			<div class="text_wenzi">分享活动至新浪微博，还有机会获得<span>明星体验装</span>！</div>
+			<a href=""><img src="images/share_button.jpg" border="0" /></a>
+		</div>
+	</div>
+<div id="a2">
+	<div class="guize_bg">
+		<div class="guize_close" onclick="tb_remove()">
+			<a href="#"><img src="images/closex.jpg" /></a>
+		</div>
+	</div>
+</div>
 
-      <div id="a1">
-      <div class="conform_bg">
-      <div class="closex"><a href="javascript:;"><img src="images/closex.jpg" /></a></div>
-      <div class="form_con">
-          <h2>投票成功！</h2>
-          <div class="text_wenzi">填写资料参与抽奖赢<span>专属妆容打造</span>及新品<span>流云眼影笔</span>！</div>
-          <div class="form_box">
-              <div>
-                  <label>姓名：</label>
-                  <input type="text" id="name" class="textInput"  />
-              </div>
-              <div>
-                  <label>手机：</label>
-                  <input type="text" id="mobile" class="textInput"  />
-              </div>
-              <div>
-                  <label>城市：</label>
-                  <input type="text" id="city" class="textInput"  />
-              </div>
-              <div>
-                  <label>&nbsp;</label>
-                  <input type="submit" class="subbotton" value="提交" />
-              </div>
-          </div>
-      </div>
-      <div class="error1">请输入您的姓名</div>
-      <div class="error2">请输入您的手机号码</div>
-      <div class="error3">请输入您所在的城市</div>
-      <div class="form_success">
-              <h2>提交成功！</h2>
-              <div class="text_wenzi">分享活动至新浪微博，还有机会获得<span>明星体验装</span>！</div>
-              <a href=""><img src="images/share_button.jpg" border="0" /></a>
-          </div>
-      </div>
-    </div>
   {{/if   }}
 </template>
