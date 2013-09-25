@@ -30,7 +30,7 @@ img.block{display: block;}
 .main{ position:absolute; left:0; top:39px;}
 .bb_vedio{position:relative; width:950px; height:429px; background:url(../images/dp_img_2.jpg) no-repeat;}
 .bb_vedio .play_vedio{position:absolute;top:12px;left:5px;width: 437px;}
-.bb_vedio a.longstick{ display:block; width:480px; height:410px; position:absolute; top:6px; left:467px; z-index:150;}
+.bb_vedio a.longstick{ display:block; width:480px; height:410px; position:absolute; top:6px; left:467px; }
 .contrast{ position:relative; background:url(../images/dp_img_3.jpg) no-repeat; width:950px; height:384px;}
 .contrast a{ position:absolute; display:block;}
 .contrast a.rules{ width:85px; height:24px; top:122px; left:540px;}
