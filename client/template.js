@@ -256,7 +256,7 @@ Template.user1.p = function() {
   return People.findOne({name: Session.get("currentPersion")});
 }
 
-Template.user1.events({
+var UserDetailEventHandler = {
   'click #btnVote' : function (e, t) {
      var id = e.currentTarget.getAttribute("uid");
      var uname = e.currentTarget.getAttribute("uname");
@@ -321,7 +321,9 @@ Template.user1.events({
         e.preventDefault();
      });
   }
-});
+};
+
+Template.user1.events(UserDetailEventHandler);
 
 Template.user1.rendered = function() {
   var _gaq = _gaq || [];
@@ -351,36 +353,7 @@ Template.user2.p = function() {
   return People.findOne({name: Session.get("currentPersion")});
 }
 
-Template.user2.events({
-  'click #btnVote' : function (e, t) {
-     var id = e.currentTarget.getAttribute("uid");
-     var uname = e.currentTarget.getAttribute("uname");
-     Meteor.call("incVote", id);
-     addVoteTracker(uname);
-     var t = e.currentTarget.title || e.currentTarget.name || null;
-	 var a = e.currentTarget.href || e.currentTarget.alt;
-	 var g = e.currentTarget.rel || false;
-	 tb_show(t,a,g);
-     e.currentTarget.blur();
-     e.preventDefault();
-     // TODO (hacker, add subbuton, cancel, share click event, Show div isn't in Template User)
-     $("#TB_window .subbotton").click(function(){
-       var name = $("#TB_window #name").val();
-       var mobile = $("#TB_window #mobile").val();
-       var city = $("#TB_window #city").val();
-       console.log("name, mobile, city: " + name, mobile, city);
-       Meteor.call("addFeedBack", name, mobile, city, Session.get("voteTracker"));
-       Session.set("voteTracker", []);
-       $(".form_con").hide();
-	   $(".form_success").show();
-
-     });
-
-     $("#TB_window .closex").click(function(){
-        tb_remove();
-     });
-  },
-});
+Template.user2.events(UserDetailEventHandler);
 
 Template.user2.rendered = function() {
   var _gaq = _gaq || [];
@@ -410,36 +383,7 @@ Template.user3.p = function() {
   return People.findOne({name: Session.get("currentPersion")});
 }
 
-Template.user3.events({
-  'click #btnVote' : function (e, t) {
-     var id = e.currentTarget.getAttribute("uid");
-     var uname = e.currentTarget.getAttribute("uname");
-     Meteor.call("incVote", id);
-     addVoteTracker(uname);
-     var t = e.currentTarget.title || e.currentTarget.name || null;
-	 var a = e.currentTarget.href || e.currentTarget.alt;
-	 var g = e.currentTarget.rel || false;
-	 tb_show(t,a,g);
-     e.currentTarget.blur();
-     e.preventDefault();
-     // TODO (hacker, add subbuton, cancel, share click event, Show div isn't in Template User)
-     $("#TB_window .subbotton").click(function(){
-       var name = $("#TB_window #name").val();
-       var mobile = $("#TB_window #mobile").val();
-       var city = $("#TB_window #city").val();
-       console.log("name, mobile, city: " + name, mobile, city);
-       Meteor.call("addFeedBack", name, mobile, city, Session.get("voteTracker"));
-       Session.set("voteTracker", []);
-       $(".form_con").hide();
-	   $(".form_success").show();
-
-     });
-
-     $("#TB_window .closex").click(function(){
-        tb_remove();
-     });
-  },
-});
+Template.user3.events(UserDetailEventHandler);
 
 Template.user3.rendered = function() {
   var _gaq = _gaq || [];
@@ -469,36 +413,7 @@ Template.user4.p = function() {
   return People.findOne({name: Session.get("currentPersion")});
 }
 
-Template.user4.events({
-  'click #btnVote' : function (e, t) {
-     var id = e.currentTarget.getAttribute("uid");
-     var uname = e.currentTarget.getAttribute("uname");
-     Meteor.call("incVote", id);
-     addVoteTracker(uname);
-     var t = e.currentTarget.title || e.currentTarget.name || null;
-	 var a = e.currentTarget.href || e.currentTarget.alt;
-	 var g = e.currentTarget.rel || false;
-	 tb_show(t,a,g);
-     e.currentTarget.blur();
-     e.preventDefault();
-     // TODO (hacker, add subbuton, cancel, share click event, Show div isn't in Template User)
-     $("#TB_window .subbotton").click(function(){
-       var name = $("#TB_window #name").val();
-       var mobile = $("#TB_window #mobile").val();
-       var city = $("#TB_window #city").val();
-       console.log("name, mobile, city: " + name, mobile, city);
-       Meteor.call("addFeedBack", name, mobile, city, Session.get("voteTracker"));
-       Session.set("voteTracker", []);
-       $(".form_con").hide();
-	   $(".form_success").show();
-
-     });
-
-     $("#TB_window .closex").click(function(){
-        tb_remove();
-     });
-  },
-});
+Template.user4.events(UserDetailEventHandler);
 
 Template.user4.rendered = function() {
   var _gaq = _gaq || [];
@@ -527,36 +442,7 @@ Template.user5.p = function() {
   return People.findOne({name: Session.get("currentPersion")});
 }
 
-Template.user5.events({
-  'click #btnVote' : function (e, t) {
-     var id = e.currentTarget.getAttribute("uid");
-     var uname = e.currentTarget.getAttribute("uname");
-     Meteor.call("incVote", id);
-     addVoteTracker(uname);
-     var t = e.currentTarget.title || e.currentTarget.name || null;
-	 var a = e.currentTarget.href || e.currentTarget.alt;
-	 var g = e.currentTarget.rel || false;
-	 tb_show(t,a,g);
-     e.currentTarget.blur();
-     e.preventDefault();
-     // TODO (hacker, add subbuton, cancel, share click event, Show div isn't in Template User)
-     $("#TB_window .subbotton").click(function(){
-       var name = $("#TB_window #name").val();
-       var mobile = $("#TB_window #mobile").val();
-       var city = $("#TB_window #city").val();
-       console.log("name, mobile, city: " + name, mobile, city);
-       Meteor.call("addFeedBack", name, mobile, city, Session.get("voteTracker"));
-       Session.set("voteTracker", []);
-       $(".form_con").hide();
-	   $(".form_success").show();
-
-     });
-
-     $("#TB_window .closex").click(function(){
-        tb_remove();
-     });
-  },
-});
+Template.user5.events(UserDetailEventHandler);
 
 Template.user5.rendered = function() {
   var _gaq = _gaq || [];
@@ -585,36 +471,7 @@ Template.user6.p = function() {
   return People.findOne({name: Session.get("currentPersion")});
 }
 
-Template.user6.events({
-  'click #btnVote' : function (e, t) {
-     var id = e.currentTarget.getAttribute("uid");
-     var uname = e.currentTarget.getAttribute("uname");
-     Meteor.call("incVote", id);
-     addVoteTracker(uname);
-     var t = e.currentTarget.title || e.currentTarget.name || null;
-	 var a = e.currentTarget.href || e.currentTarget.alt;
-	 var g = e.currentTarget.rel || false;
-	 tb_show(t,a,g);
-     e.currentTarget.blur();
-     e.preventDefault();
-     // TODO (hacker, add subbuton, cancel, share click event, Show div isn't in Template User)
-     $("#TB_window .subbotton").click(function(){
-       var name = $("#TB_window #name").val();
-       var mobile = $("#TB_window #mobile").val();
-       var city = $("#TB_window #city").val();
-       console.log("name, mobile, city: " + name, mobile, city);
-       Meteor.call("addFeedBack", name, mobile, city, Session.get("voteTracker"));
-       Session.set("voteTracker", []);
-       $(".form_con").hide();
-	   $(".form_success").show();
-
-     });
-
-     $("#TB_window .closex").click(function(){
-        tb_remove();
-     });
-  },
-});
+Template.user6.events(UserDetailEventHandler);
 
 Template.user6.rendered = function() {
   var _gaq = _gaq || [];
@@ -643,36 +500,7 @@ Template.user7.p = function() {
   return People.findOne({name: Session.get("currentPersion")});
 }
 
-Template.user7.events({
-  'click #btnVote' : function (e, t) {
-     var id = e.currentTarget.getAttribute("uid");
-     var uname = e.currentTarget.getAttribute("uname");
-     Meteor.call("incVote", id);
-     addVoteTracker(uname);
-     var t = e.currentTarget.title || e.currentTarget.name || null;
-	 var a = e.currentTarget.href || e.currentTarget.alt;
-	 var g = e.currentTarget.rel || false;
-	 tb_show(t,a,g);
-     e.currentTarget.blur();
-     e.preventDefault();
-     // TODO (hacker, add subbuton, cancel, share click event, Show div isn't in Template User)
-     $("#TB_window .subbotton").click(function(){
-       var name = $("#TB_window #name").val();
-       var mobile = $("#TB_window #mobile").val();
-       var city = $("#TB_window #city").val();
-       console.log("name, mobile, city: " + name, mobile, city);
-       Meteor.call("addFeedBack", name, mobile, city, Session.get("voteTracker"));
-       Session.set("voteTracker", []);
-       $(".form_con").hide();
-	   $(".form_success").show();
-
-     });
-
-     $("#TB_window .closex").click(function(){
-        tb_remove();
-     });
-  },
-});
+Template.user7.events(UserDetailEventHandler);
 
 Template.user7.rendered = function() {
   var _gaq = _gaq || [];
@@ -700,36 +528,7 @@ Template.user8.p = function() {
   return People.findOne({name: Session.get("currentPersion")});
 }
 
-Template.user8.events({
-  'click #btnVote' : function (e, t) {
-     var id = e.currentTarget.getAttribute("uid");
-     var uname = e.currentTarget.getAttribute("uname");
-     Meteor.call("incVote", id);
-     addVoteTracker(uname);
-     var t = e.currentTarget.title || e.currentTarget.name || null;
-	 var a = e.currentTarget.href || e.currentTarget.alt;
-	 var g = e.currentTarget.rel || false;
-	 tb_show(t,a,g);
-     e.currentTarget.blur();
-     e.preventDefault();
-     // TODO (hacker, add subbuton, cancel, share click event, Show div isn't in Template User)
-     $("#TB_window .subbotton").click(function(){
-       var name = $("#TB_window #name").val();
-       var mobile = $("#TB_window #mobile").val();
-       var city = $("#TB_window #city").val();
-       console.log("name, mobile, city: " + name, mobile, city);
-       Meteor.call("addFeedBack", name, mobile, city, Session.get("voteTracker"));
-       Session.set("voteTracker", []);
-       $(".form_con").hide();
-	   $(".form_success").show();
-
-     });
-
-     $("#TB_window .closex").click(function(){
-        tb_remove();
-     });
-  },
-});
+Template.user8.events(UserDetailEventHandler);
 
 Template.user8.rendered = function() {
   var _gaq = _gaq || [];
@@ -757,36 +556,7 @@ Template.user9.p = function() {
   return People.findOne({name: Session.get("currentPersion")});
 }
 
-Template.user9.events({
-  'click #btnVote' : function (e, t) {
-     var id = e.currentTarget.getAttribute("uid");
-     var uname = e.currentTarget.getAttribute("uname");
-     Meteor.call("incVote", id);
-     addVoteTracker(uname);
-     var t = e.currentTarget.title || e.currentTarget.name || null;
-	 var a = e.currentTarget.href || e.currentTarget.alt;
-	 var g = e.currentTarget.rel || false;
-	 tb_show(t,a,g);
-     e.currentTarget.blur();
-     e.preventDefault();
-     // TODO (hacker, add subbuton, cancel, share click event, Show div isn't in Template User)
-     $("#TB_window .subbotton").click(function(){
-       var name = $("#TB_window #name").val();
-       var mobile = $("#TB_window #mobile").val();
-       var city = $("#TB_window #city").val();
-       console.log("name, mobile, city: " + name, mobile, city);
-       Meteor.call("addFeedBack", name, mobile, city, Session.get("voteTracker"));
-       Session.set("voteTracker", []);
-       $(".form_con").hide();
-	   $(".form_success").show();
-
-     });
-
-     $("#TB_window .closex").click(function(){
-        tb_remove();
-     });
-  },
-});
+Template.user9.events(UserDetailEventHandler);
 
 Template.user9.rendered = function() {
   var _gaq = _gaq || [];
@@ -814,36 +584,7 @@ Template.user10.p = function() {
   return People.findOne({name: Session.get("currentPersion")});
 }
 
-Template.user10.events({
-  'click #btnVote' : function (e, t) {
-     var id = e.currentTarget.getAttribute("uid");
-     var uname = e.currentTarget.getAttribute("uname");
-     Meteor.call("incVote", id);
-     addVoteTracker(uname);
-     var t = e.currentTarget.title || e.currentTarget.name || null;
-	 var a = e.currentTarget.href || e.currentTarget.alt;
-	 var g = e.currentTarget.rel || false;
-	 tb_show(t,a,g);
-     e.currentTarget.blur();
-     e.preventDefault();
-     // TODO (hacker, add subbuton, cancel, share click event, Show div isn't in Template User)
-     $("#TB_window .subbotton").click(function(){
-       var name = $("#TB_window #name").val();
-       var mobile = $("#TB_window #mobile").val();
-       var city = $("#TB_window #city").val();
-       console.log("name, mobile, city: " + name, mobile, city);
-       Meteor.call("addFeedBack", name, mobile, city, Session.get("voteTracker"));
-       Session.set("voteTracker", []);
-       $(".form_con").hide();
-	   $(".form_success").show();
-
-     });
-
-     $("#TB_window .closex").click(function(){
-        tb_remove();
-     });
-  },
-});
+Template.user10.events(UserDetailEventHandler);
 Template.user10.rendered = function() {
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-530472-46']);
@@ -871,36 +612,7 @@ Template.user11.p = function() {
   return People.findOne({name: Session.get("currentPersion")});
 }
 
-Template.user11.events({
-  'click #btnVote' : function (e, t) {
-     var id = e.currentTarget.getAttribute("uid");
-     var uname = e.currentTarget.getAttribute("uname");
-     Meteor.call("incVote", id);
-     addVoteTracker(uname);
-     var t = e.currentTarget.title || e.currentTarget.name || null;
-	 var a = e.currentTarget.href || e.currentTarget.alt;
-	 var g = e.currentTarget.rel || false;
-	 tb_show(t,a,g);
-     e.currentTarget.blur();
-     e.preventDefault();
-     // TODO (hacker, add subbuton, cancel, share click event, Show div isn't in Template User)
-     $("#TB_window .subbotton").click(function(){
-       var name = $("#TB_window #name").val();
-       var mobile = $("#TB_window #mobile").val();
-       var city = $("#TB_window #city").val();
-       console.log("name, mobile, city: " + name, mobile, city);
-       Meteor.call("addFeedBack", name, mobile, city, Session.get("voteTracker"));
-       Session.set("voteTracker", []);
-       $(".form_con").hide();
-	   $(".form_success").show();
-
-     });
-
-     $("#TB_window .closex").click(function(){
-        tb_remove();
-     });
-  },
-});
+Template.user11.events(UserDetailEventHandler);
 
 Template.user11.rendered = function() {
   var _gaq = _gaq || [];
@@ -929,36 +641,7 @@ Template.user12.p = function() {
   return People.findOne({name: Session.get("currentPersion")});
 }
 
-Template.user12.events({
-  'click #btnVote' : function (e, t) {
-     var id = e.currentTarget.getAttribute("uid");
-     var uname = e.currentTarget.getAttribute("uname");
-     Meteor.call("incVote", id);
-     addVoteTracker(uname);
-     var t = e.currentTarget.title || e.currentTarget.name || null;
-	 var a = e.currentTarget.href || e.currentTarget.alt;
-	 var g = e.currentTarget.rel || false;
-	 tb_show(t,a,g);
-     e.currentTarget.blur();
-     e.preventDefault();
-     // TODO (hacker, add subbuton, cancel, share click event, Show div isn't in Template User)
-     $("#TB_window .subbotton").click(function(){
-       var name = $("#TB_window #name").val();
-       var mobile = $("#TB_window #mobile").val();
-       var city = $("#TB_window #city").val();
-       console.log("name, mobile, city: " + name, mobile, city);
-       Meteor.call("addFeedBack", name, mobile, city, Session.get("voteTracker"));
-       Session.set("voteTracker", []);
-       $(".form_con").hide();
-	   $(".form_success").show();
-
-     });
-
-     $("#TB_window .closex").click(function(){
-        tb_remove();
-     });
-  },
-});
+Template.user12.events(UserDetailEventHandler);
 
 Template.user12.rendered = function() {
   var _gaq = _gaq || [];
