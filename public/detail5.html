@@ -75,7 +75,8 @@ _hmt.push(['_trackEvent','cloudcam','cloudvote','','']);"></a>
 	<div class="form_success">
 			<h2>提交成功！</h2>
 			<div class="text_wenzi">分享活动至新浪微博，还有机会获得<span>明星体验装</span>！</div>
-			<a href=""><img src="images/share_button.jpg" border="0" /></a>
+			<a href="" onclick="_gaq.push(['_trackEvent','cloudcam','cloudshow',,,false]);
+_hmt.push(['_trackEvent','cloudcam','cloudshow','','']);"><img src="images/share_button.jpg" border="0" /></a>
 		</div>
 	</div>
 </div>
@@ -103,7 +104,7 @@ var _hmt = _hmt || [];
 (function() {
   var hm = document.createElement(""script"");
   hm.src = ""//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c"";
-  var s = document.getElementsByTagName(""script"")[0];
+  var s = document.getElementsByTagName(""script"")[0]; 
   s.parentNode.insertBefore(hm, s);
 })();
 </script>

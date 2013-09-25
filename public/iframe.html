@@ -4,12 +4,22 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>INDEX</title>
 <link rel="stylesheet" type="text/css" href="css/css.css" />
+<script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="js/swfobject.js"></script>
 </head>
 
 <body>
 <div id="dp_wrapper">
 		<div id="playvideo">
-			<div class="shipin"><img src="images/video_bg1.jpg" /></div>
+			<div class="vid_area">
+				<div id="flash" style="height: 550px; overflow:hidden;">
+				<script type="text/javascript">
+					var so = new SWFObject("swf/pianbi.swf","actionFlash","950","660","9","#fff");
+					so.addParam("flashvars","autostart=false&amp;autoplay=true&amp;width=950&amp;height=660&amp;file=A.flv");
+					so.write("flash");
+				</script>
+				</div>
+			</div>
 			<div class="video_skin">
 				<a href="index.html"></a>			
 			</div>
@@ -17,5 +27,12 @@
 			<div><img src="images/video_bg4.jpg" /></div>
 		</div>
 </div>
+
+<script type="text/javascript">
+var videoFinish = function(){
+						window.location.href="index.html";
+					 }
+</script>
+
 </body>
 </html>
