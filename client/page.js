@@ -27,7 +27,6 @@ VoteRouter = Backbone.Router.extend({
       Session.set('currentView', 'index4');
     },
     detail: function(personName) {
-      console.log('detail');
       Session.set('currentView', personName);
       Session.set('currentPersion', personName);
     }

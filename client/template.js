@@ -79,6 +79,7 @@ Template.index.events({
 
      $("#TB_window .guize_close").click(function(){
         tb_remove();
+        e.preventDefault();
      });
   }
 });
@@ -272,7 +273,29 @@ Template.user1.events({
        var name = $("#TB_window #name").val();
        var mobile = $("#TB_window #mobile").val();
        var city = $("#TB_window #city").val();
-       console.log("name, mobile, city: " + name, mobile, city);
+       var reg = /^0?(13[0-9]|15[012356789]|18[0236789]|14[57])[0-9]{8}$/;
+
+       if (name === '') {
+          $('#TB_window .error1').show();
+          return;
+       } else {
+          $('#TB_window .error1').hide();
+       }
+
+       if (mobile === '' || !reg.test(mobile)) {
+          $('#TB_window .error2').show();
+          return;
+       } else {
+          $('#TB_window .error2').hide();
+       }
+
+      if (city === '') {
+          $('#TB_window .error3').show();
+          return;
+       } else {
+          $('#TB_window .error3').hide();
+       }
+
        Meteor.call("addFeedBack", name, mobile, city, Session.get("voteTracker"));
        Session.set("voteTracker", []);
        $(".form_con").hide();
@@ -284,6 +307,20 @@ Template.user1.events({
         tb_remove();
      });
   },
+  'click .icon': function(e, t) {
+     var t = e.currentTarget.title || e.currentTarget.name || null;
+	 var a = e.currentTarget.href || e.currentTarget.alt;
+	 var g = e.currentTarget.rel || false;
+	 tb_show(t,a,g);
+     e.currentTarget.blur();
+     e.preventDefault();
+
+     $("#TB_window .guize_close").click(function(e){
+        tb_remove();
+        e.currentTarget.blur();
+        e.preventDefault();
+     });
+  }
 });
 
 Template.user1.rendered = function() {
