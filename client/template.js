@@ -49,16 +49,24 @@ Template.index.rendered = function() {
     })
   });
 
+
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-530472-46']);
-  _gaq.push(['_trackPageview']);
+   _gaq.push(['_setAccount', 'UA-530472-46']);
+   _gaq.push(['_trackPageview']);
 
+   (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+   })();
+
+  var _hmt = _hmt || [];
   (function() {
-  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+   var hm = document.createElement("script");
+   hm.src = "//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c";
+   var s = document.getElementsByTagName("script")[0];
+   s.parentNode.insertBefore(hm, s);
   })();
-
 
 }
 
@@ -83,6 +91,13 @@ Template.index2.show = function() {
 }
 
 Template.index2.rendered = function() {
+  var _hmt = _hmt || [];
+  (function() {
+   var hm = document.createElement("script");
+   hm.src = "//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c";
+   var s = document.getElementsByTagName("script")[0];
+   s.parentNode.insertBefore(hm, s);
+  })();
   var _gaq = _gaq || [];
    _gaq.push(['_setAccount', 'UA-530472-46']);
    _gaq.push(['_trackPageview']);
@@ -177,7 +192,7 @@ Template.index3.rendered = function() {
     });
 
     $(function(){
-        GaAgent.indexPage();
+        //GaAgent.indexPage();
         $.browser.msie && $.browser.version=="6.0" &&
         $("#nav a:not(.on)").each(function(){
             var dom=this;
@@ -188,7 +203,15 @@ Template.index3.rendered = function() {
         });
     });
 
-    var _gaq = _gaq || [];
+   var _hmt = _hmt || [];
+  (function() {
+   var hm = document.createElement("script");
+   hm.src = "//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c";
+   var s = document.getElementsByTagName("script")[0];
+   s.parentNode.insertBefore(hm, s);
+  })();
+
+  var _gaq = _gaq || [];
    _gaq.push(['_setAccount', 'UA-530472-46']);
    _gaq.push(['_trackPageview']);
 
@@ -207,6 +230,14 @@ Template.index4.show = function() {
 
 
 Template.index4.rendered = function() {
+   var _hmt = _hmt || [];
+  (function() {
+   var hm = document.createElement("script");
+   hm.src = "//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c";
+   var s = document.getElementsByTagName("script")[0];
+   s.parentNode.insertBefore(hm, s);
+  })();
+
   var _gaq = _gaq || [];
    _gaq.push(['_setAccount', 'UA-530472-46']);
    _gaq.push(['_trackPageview']);
@@ -216,6 +247,7 @@ Template.index4.rendered = function() {
      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
    })();
+
 
 }
 
@@ -229,7 +261,6 @@ Template.user1.p = function() {
 
 var addSubbitSuccessGA = function() {
   _gaq.push(['_trackEvent','cloudcam','cloudsuccess',,,false]);
-  //_hmt.push(['_trackEvent','cloudcam','cloudsuccess','','']);
 }
 
 var UserDetailEventHandler = {
@@ -302,6 +333,14 @@ var UserDetailEventHandler = {
 Template.user1.events(UserDetailEventHandler);
 
 Template.user1.rendered = function() {
+   var _hmt = _hmt || [];
+  (function() {
+   var hm = document.createElement("script");
+   hm.src = "//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c";
+   var s = document.getElementsByTagName("script")[0];
+   s.parentNode.insertBefore(hm, s);
+  })();
+
   var _gaq = _gaq || [];
    _gaq.push(['_setAccount', 'UA-530472-46']);
    _gaq.push(['_trackPageview']);
@@ -326,6 +365,14 @@ Template.user2.p = function() {
 Template.user2.events(UserDetailEventHandler);
 
 Template.user2.rendered = function() {
+   var _hmt = _hmt || [];
+  (function() {
+   var hm = document.createElement("script");
+   hm.src = "//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c";
+   var s = document.getElementsByTagName("script")[0];
+   s.parentNode.insertBefore(hm, s);
+  })();
+
   var _gaq = _gaq || [];
    _gaq.push(['_setAccount', 'UA-530472-46']);
    _gaq.push(['_trackPageview']);
@@ -350,6 +397,14 @@ Template.user3.p = function() {
 Template.user3.events(UserDetailEventHandler);
 
 Template.user3.rendered = function() {
+   var _hmt = _hmt || [];
+  (function() {
+   var hm = document.createElement("script");
+   hm.src = "//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c";
+   var s = document.getElementsByTagName("script")[0];
+   s.parentNode.insertBefore(hm, s);
+  })();
+
   var _gaq = _gaq || [];
    _gaq.push(['_setAccount', 'UA-530472-46']);
    _gaq.push(['_trackPageview']);
@@ -374,6 +429,14 @@ Template.user4.p = function() {
 Template.user4.events(UserDetailEventHandler);
 
 Template.user4.rendered = function() {
+   var _hmt = _hmt || [];
+  (function() {
+   var hm = document.createElement("script");
+   hm.src = "//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c";
+   var s = document.getElementsByTagName("script")[0];
+   s.parentNode.insertBefore(hm, s);
+  })();
+
   var _gaq = _gaq || [];
    _gaq.push(['_setAccount', 'UA-530472-46']);
    _gaq.push(['_trackPageview']);
@@ -397,6 +460,14 @@ Template.user5.p = function() {
 Template.user5.events(UserDetailEventHandler);
 
 Template.user5.rendered = function() {
+   var _hmt = _hmt || [];
+  (function() {
+   var hm = document.createElement("script");
+   hm.src = "//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c";
+   var s = document.getElementsByTagName("script")[0];
+   s.parentNode.insertBefore(hm, s);
+  })();
+
   var _gaq = _gaq || [];
    _gaq.push(['_setAccount', 'UA-530472-46']);
    _gaq.push(['_trackPageview']);
@@ -420,6 +491,14 @@ Template.user6.p = function() {
 Template.user6.events(UserDetailEventHandler);
 
 Template.user6.rendered = function() {
+   var _hmt = _hmt || [];
+  (function() {
+   var hm = document.createElement("script");
+   hm.src = "//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c";
+   var s = document.getElementsByTagName("script")[0];
+   s.parentNode.insertBefore(hm, s);
+  })();
+
   var _gaq = _gaq || [];
    _gaq.push(['_setAccount', 'UA-530472-46']);
    _gaq.push(['_trackPageview']);
@@ -429,7 +508,6 @@ Template.user6.rendered = function() {
      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
    })();
-
 
 }
 
@@ -443,6 +521,14 @@ Template.user7.p = function() {
 Template.user7.events(UserDetailEventHandler);
 
 Template.user7.rendered = function() {
+   var _hmt = _hmt || [];
+  (function() {
+   var hm = document.createElement("script");
+   hm.src = "//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c";
+   var s = document.getElementsByTagName("script")[0];
+   s.parentNode.insertBefore(hm, s);
+  })();
+
   var _gaq = _gaq || [];
    _gaq.push(['_setAccount', 'UA-530472-46']);
    _gaq.push(['_trackPageview']);
@@ -465,6 +551,14 @@ Template.user8.p = function() {
 Template.user8.events(UserDetailEventHandler);
 
 Template.user8.rendered = function() {
+   var _hmt = _hmt || [];
+  (function() {
+   var hm = document.createElement("script");
+   hm.src = "//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c";
+   var s = document.getElementsByTagName("script")[0];
+   s.parentNode.insertBefore(hm, s);
+  })();
+
   var _gaq = _gaq || [];
    _gaq.push(['_setAccount', 'UA-530472-46']);
    _gaq.push(['_trackPageview']);
@@ -474,7 +568,6 @@ Template.user8.rendered = function() {
      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
    })();
-
 
 }
 Template.user9.show = function() {
@@ -487,6 +580,14 @@ Template.user9.p = function() {
 Template.user9.events(UserDetailEventHandler);
 
 Template.user9.rendered = function() {
+   var _hmt = _hmt || [];
+  (function() {
+   var hm = document.createElement("script");
+   hm.src = "//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c";
+   var s = document.getElementsByTagName("script")[0];
+   s.parentNode.insertBefore(hm, s);
+  })();
+
   var _gaq = _gaq || [];
    _gaq.push(['_setAccount', 'UA-530472-46']);
    _gaq.push(['_trackPageview']);
@@ -508,6 +609,14 @@ Template.user10.p = function() {
 
 Template.user10.events(UserDetailEventHandler);
 Template.user10.rendered = function() {
+   var _hmt = _hmt || [];
+  (function() {
+   var hm = document.createElement("script");
+   hm.src = "//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c";
+   var s = document.getElementsByTagName("script")[0];
+   s.parentNode.insertBefore(hm, s);
+  })();
+
   var _gaq = _gaq || [];
    _gaq.push(['_setAccount', 'UA-530472-46']);
    _gaq.push(['_trackPageview']);
@@ -531,6 +640,14 @@ Template.user11.p = function() {
 Template.user11.events(UserDetailEventHandler);
 
 Template.user11.rendered = function() {
+   var _hmt = _hmt || [];
+  (function() {
+   var hm = document.createElement("script");
+   hm.src = "//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c";
+   var s = document.getElementsByTagName("script")[0];
+   s.parentNode.insertBefore(hm, s);
+  })();
+
   var _gaq = _gaq || [];
    _gaq.push(['_setAccount', 'UA-530472-46']);
    _gaq.push(['_trackPageview']);
@@ -554,6 +671,14 @@ Template.user12.p = function() {
 Template.user12.events(UserDetailEventHandler);
 
 Template.user12.rendered = function() {
+   var _hmt = _hmt || [];
+  (function() {
+   var hm = document.createElement("script");
+   hm.src = "//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c";
+   var s = document.getElementsByTagName("script")[0];
+   s.parentNode.insertBefore(hm, s);
+  })();
+
   var _gaq = _gaq || [];
    _gaq.push(['_setAccount', 'UA-530472-46']);
    _gaq.push(['_trackPageview']);
