@@ -50,21 +50,21 @@ Template.index.rendered = function() {
   });
 
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-530472-46']);
-  _gaq.push(['_trackPageview']);
+   _gaq.push(['_setAccount', 'UA-530472-46']);
+   _gaq.push(['_trackPageview']);
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+   (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+   })();
 
   var _hmt = _hmt || [];
   (function() {
-    var hm = document.createElement("script");
-    hm.src = ""//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c"";
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(hm, s);
+   var hm = document.createElement("script");
+   hm.src = "//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c";
+   var s = document.getElementsByTagName("script")[0];
+   s.parentNode.insertBefore(hm, s);
   })();
 }
 
@@ -90,21 +90,21 @@ Template.index2.show = function() {
 
 Template.index2.rendered = function() {
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-530472-46']);
-  _gaq.push(['_trackPageview']);
+   _gaq.push(['_setAccount', 'UA-530472-46']);
+   _gaq.push(['_trackPageview']);
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+   (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+   })();
 
   var _hmt = _hmt || [];
   (function() {
-    var hm = document.createElement("script");
-    hm.src = ""//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c"";
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(hm, s);
+   var hm = document.createElement("script");
+   hm.src = "//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c";
+   var s = document.getElementsByTagName("script")[0];
+   s.parentNode.insertBefore(hm, s);
   })();
 
 }
@@ -202,25 +202,23 @@ Template.index3.rendered = function() {
         });
     });
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-530472-46']);
-  _gaq.push(['_trackPageview']);
+    var _gaq = _gaq || [];
+   _gaq.push(['_setAccount', 'UA-530472-46']);
+   _gaq.push(['_trackPageview']);
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+   (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+   })();
 
   var _hmt = _hmt || [];
   (function() {
-    var hm = document.createElement("script");
-    hm.src = ""//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c"";
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(hm, s);
+   var hm = document.createElement("script");
+   hm.src = "//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c";
+   var s = document.getElementsByTagName("script")[0];
+   s.parentNode.insertBefore(hm, s);
   })();
-
-
 }
 
 Template.index4.show = function() {
@@ -230,23 +228,22 @@ Template.index4.show = function() {
 
 Template.index4.rendered = function() {
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-530472-46']);
-  _gaq.push(['_trackPageview']);
+   _gaq.push(['_setAccount', 'UA-530472-46']);
+   _gaq.push(['_trackPageview']);
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+   (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+   })();
 
   var _hmt = _hmt || [];
   (function() {
-    var hm = document.createElement("script");
-    hm.src = ""//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c"";
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(hm, s);
-  })();
-}
+   var hm = document.createElement("script");
+   hm.src = "//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c";
+   var s = document.getElementsByTagName("script")[0];
+   s.parentNode.insertBefore(hm, s);
+  })();}
 
 Template.user1.show = function() {
   return ifViewing("user1");
@@ -332,21 +329,21 @@ Template.user1.events(UserDetailEventHandler);
 
 Template.user1.rendered = function() {
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-530472-46']);
-  _gaq.push(['_trackPageview']);
+   _gaq.push(['_setAccount', 'UA-530472-46']);
+   _gaq.push(['_trackPageview']);
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+   (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+   })();
 
   var _hmt = _hmt || [];
   (function() {
-    var hm = document.createElement("script");
-    hm.src = ""//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c"";
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(hm, s);
+   var hm = document.createElement("script");
+   hm.src = "//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c";
+   var s = document.getElementsByTagName("script")[0];
+   s.parentNode.insertBefore(hm, s);
   })();
 }
 
@@ -362,21 +359,21 @@ Template.user2.events(UserDetailEventHandler);
 
 Template.user2.rendered = function() {
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-530472-46']);
-  _gaq.push(['_trackPageview']);
+   _gaq.push(['_setAccount', 'UA-530472-46']);
+   _gaq.push(['_trackPageview']);
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+   (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+   })();
 
   var _hmt = _hmt || [];
   (function() {
-    var hm = document.createElement("script");
-    hm.src = ""//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c"";
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(hm, s);
+   var hm = document.createElement("script");
+   hm.src = "//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c";
+   var s = document.getElementsByTagName("script")[0];
+   s.parentNode.insertBefore(hm, s);
   })();
 }
 
@@ -392,21 +389,21 @@ Template.user3.events(UserDetailEventHandler);
 
 Template.user3.rendered = function() {
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-530472-46']);
-  _gaq.push(['_trackPageview']);
+   _gaq.push(['_setAccount', 'UA-530472-46']);
+   _gaq.push(['_trackPageview']);
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+   (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+   })();
 
   var _hmt = _hmt || [];
   (function() {
-    var hm = document.createElement("script");
-    hm.src = ""//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c"";
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(hm, s);
+   var hm = document.createElement("script");
+   hm.src = "//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c";
+   var s = document.getElementsByTagName("script")[0];
+   s.parentNode.insertBefore(hm, s);
   })();
 }
 
@@ -422,21 +419,21 @@ Template.user4.events(UserDetailEventHandler);
 
 Template.user4.rendered = function() {
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-530472-46']);
-  _gaq.push(['_trackPageview']);
+   _gaq.push(['_setAccount', 'UA-530472-46']);
+   _gaq.push(['_trackPageview']);
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+   (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+   })();
 
   var _hmt = _hmt || [];
   (function() {
-    var hm = document.createElement("script");
-    hm.src = ""//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c"";
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(hm, s);
+   var hm = document.createElement("script");
+   hm.src = "//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c";
+   var s = document.getElementsByTagName("script")[0];
+   s.parentNode.insertBefore(hm, s);
   })();
 }
 Template.user5.show = function() {
@@ -451,21 +448,21 @@ Template.user5.events(UserDetailEventHandler);
 
 Template.user5.rendered = function() {
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-530472-46']);
-  _gaq.push(['_trackPageview']);
+   _gaq.push(['_setAccount', 'UA-530472-46']);
+   _gaq.push(['_trackPageview']);
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+   (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+   })();
 
   var _hmt = _hmt || [];
   (function() {
-    var hm = document.createElement("script");
-    hm.src = ""//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c"";
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(hm, s);
+   var hm = document.createElement("script");
+   hm.src = "//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c";
+   var s = document.getElementsByTagName("script")[0];
+   s.parentNode.insertBefore(hm, s);
   })();
 }
 Template.user6.show = function() {
@@ -480,21 +477,21 @@ Template.user6.events(UserDetailEventHandler);
 
 Template.user6.rendered = function() {
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-530472-46']);
-  _gaq.push(['_trackPageview']);
+   _gaq.push(['_setAccount', 'UA-530472-46']);
+   _gaq.push(['_trackPageview']);
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+   (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+   })();
 
   var _hmt = _hmt || [];
   (function() {
-    var hm = document.createElement("script");
-    hm.src = ""//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c"";
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(hm, s);
+   var hm = document.createElement("script");
+   hm.src = "//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c";
+   var s = document.getElementsByTagName("script")[0];
+   s.parentNode.insertBefore(hm, s);
   })();
 }
 
@@ -509,23 +506,22 @@ Template.user7.events(UserDetailEventHandler);
 
 Template.user7.rendered = function() {
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-530472-46']);
-  _gaq.push(['_trackPageview']);
+   _gaq.push(['_setAccount', 'UA-530472-46']);
+   _gaq.push(['_trackPageview']);
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+   (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+   })();
 
   var _hmt = _hmt || [];
   (function() {
-    var hm = document.createElement("script");
-    hm.src = ""//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c"";
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(hm, s);
-  })();
-}
+   var hm = document.createElement("script");
+   hm.src = "//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c";
+   var s = document.getElementsByTagName("script")[0];
+   s.parentNode.insertBefore(hm, s);
+  })();}
 Template.user8.show = function() {
   return ifViewing("user8");
 }
@@ -537,21 +533,21 @@ Template.user8.events(UserDetailEventHandler);
 
 Template.user8.rendered = function() {
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-530472-46']);
-  _gaq.push(['_trackPageview']);
+   _gaq.push(['_setAccount', 'UA-530472-46']);
+   _gaq.push(['_trackPageview']);
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+   (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+   })();
 
   var _hmt = _hmt || [];
   (function() {
-    var hm = document.createElement("script");
-    hm.src = ""//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c"";
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(hm, s);
+   var hm = document.createElement("script");
+   hm.src = "//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c";
+   var s = document.getElementsByTagName("script")[0];
+   s.parentNode.insertBefore(hm, s);
   })();
 }
 Template.user9.show = function() {
@@ -565,23 +561,22 @@ Template.user9.events(UserDetailEventHandler);
 
 Template.user9.rendered = function() {
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-530472-46']);
-  _gaq.push(['_trackPageview']);
+   _gaq.push(['_setAccount', 'UA-530472-46']);
+   _gaq.push(['_trackPageview']);
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+   (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+   })();
 
   var _hmt = _hmt || [];
   (function() {
-    var hm = document.createElement("script");
-    hm.src = ""//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c"";
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(hm, s);
-  })();
-}
+   var hm = document.createElement("script");
+   hm.src = "//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c";
+   var s = document.getElementsByTagName("script")[0];
+   s.parentNode.insertBefore(hm, s);
+  })();}
 Template.user10.show = function() {
   return ifViewing("user10");
 }
@@ -592,21 +587,21 @@ Template.user10.p = function() {
 Template.user10.events(UserDetailEventHandler);
 Template.user10.rendered = function() {
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-530472-46']);
-  _gaq.push(['_trackPageview']);
+   _gaq.push(['_setAccount', 'UA-530472-46']);
+   _gaq.push(['_trackPageview']);
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+   (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+   })();
 
   var _hmt = _hmt || [];
   (function() {
-    var hm = document.createElement("script");
-    hm.src = ""//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c"";
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(hm, s);
+   var hm = document.createElement("script");
+   hm.src = "//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c";
+   var s = document.getElementsByTagName("script")[0];
+   s.parentNode.insertBefore(hm, s);
   })();
 }
 
@@ -621,21 +616,21 @@ Template.user11.events(UserDetailEventHandler);
 
 Template.user11.rendered = function() {
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-530472-46']);
-  _gaq.push(['_trackPageview']);
+   _gaq.push(['_setAccount', 'UA-530472-46']);
+   _gaq.push(['_trackPageview']);
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+   (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+   })();
 
   var _hmt = _hmt || [];
   (function() {
-    var hm = document.createElement("script");
-    hm.src = ""//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c"";
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(hm, s);
+   var hm = document.createElement("script");
+   hm.src = "//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c";
+   var s = document.getElementsByTagName("script")[0];
+   s.parentNode.insertBefore(hm, s);
   })();
 }
 
@@ -650,21 +645,21 @@ Template.user12.events(UserDetailEventHandler);
 
 Template.user12.rendered = function() {
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-530472-46']);
-  _gaq.push(['_trackPageview']);
+   _gaq.push(['_setAccount', 'UA-530472-46']);
+   _gaq.push(['_trackPageview']);
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+   (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+   })();
 
   var _hmt = _hmt || [];
   (function() {
-    var hm = document.createElement("script");
-    hm.src = ""//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c"";
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(hm, s);
+   var hm = document.createElement("script");
+   hm.src = "//hm.baidu.com/hm.js?6b35f61db05df9e63e5b1c568019e03c";
+   var s = document.getElementsByTagName("script")[0];
+   s.parentNode.insertBefore(hm, s);
   })();
 }
 
