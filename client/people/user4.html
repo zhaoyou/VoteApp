@@ -1,17 +1,6 @@
 <template name="user4">
   {{#if show}}
-    <div id="nav">
-		<ul>
-		    <li><a href="#index" class="deletes" onclick="_gaq.push(['_trackEvent','cloudproduct','cloudnav1',,,false]);
-_hmt.push(['_trackEvent','cloudproduct','cloudnav1','','']);">指尖烟熏时代</a></li>
-			<li><a href="#index2" onclick="_gaq.push(['_trackEvent','cloudproduct','cloudnav2',,,false]);
-_hmt.push(['_trackEvent','cloudproduct','cloudnav2','','']);">缤纷眸色搭配</a></li>
-			<li class="you_here2"><a href="#index3" onclick="_gaq.push(['_trackEvent','cloudproduct','cloudnav3',,,false]);
-_hmt.push(['_trackEvent','cloudproduct','cloudnav3','','']);"><img src="images/starts_bai.gif" border="0" />票选心动双眸</a></li>
-			<li class="deletes"><a href="#index4" class="width239" onclick="_gaq.push(['_trackEvent','cloudproduct','cloudnav4',,,false]);
-_hmt.push(['_trackEvent','cloudproduct','cloudnav4','','']);">完美眼妆搭配</a></li>
-		</ul>
-	</div>
+    {{>voteNav}}
 	<!--nav end-->
 	<div class="main">
 		<div class="toupiao4">
@@ -35,46 +24,6 @@ _hmt.push(['_trackEvent','cloudcam','cloudvote','','']);"></a>
 		<div><img src="images/dp3_detail4_img_3.jpg" /></div>
 		<div><img src="images/dp3_detail4_img_4.jpg" /></div>
 </div>
-<div id="a1">
-	<div class="conform_bg">
-	<div class="closex" ><a href="javascript:;"><img src="images/closex.jpg" /></a></div>
-	<div class="form_con">
-		<h2>投票成功！</h2>
-		<div class="text_wenzi">填写资料参与抽奖赢<span>专属妆容打造</span>及新品<span>流云眼影笔</span>！</div>
-		<div class="form_box">
-			<div>
-				<label>姓名：</label>
-				<input type="text" id="name" class="textInput" value="" />
-			</div>
-			<div>
-				<label>手机：</label>
-				<input type="text" id="mobile" class="textInput" value="" />
-			</div>
-			<div>
-				<label>城市：</label>
-				<input type="text" id="city" class="textInput" value="" />
-			</div>
-			<div>
-				<label>&nbsp;</label>
-				<input type="submit" class="subbotton" value="提交" />
-			</div>
-		</div>
-	</div>
-	<div class="error1">请输入您的姓名</div>
-	<div class="error2">请输入您的手机号码</div>
-	<div class="error3">请输入您所在的城市</div>
-	<div class="form_success">
-			<h2>提交成功！</h2>
-			<div class="text_wenzi">分享活动至新浪微博，还有机会获得<span>明星体验装</span>！</div>
-			<a href=""><img src="images/share_button.jpg" border="0" /></a>
-		</div>
-	</div>
-    <div id="a2">
-        <div class="guize_bg">
-            <div class="guize_close" >
-                <a href="#"><img src="images/closex.jpg" /></a>
-            </div>
-        </div>
-    </div>
+  {{>voteEx}}
   {{/if   }}
 </template>
