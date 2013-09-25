@@ -256,6 +256,11 @@ Template.user1.p = function() {
   return People.findOne({name: Session.get("currentPersion")});
 }
 
+var addSubbitSuccessGA = function() {
+  _gaq.push(['_trackEvent','cloudcam','cloudsuccess',,,false]);
+  _hmt.push(['_trackEvent','cloudcam','cloudsuccess','','']);
+}
+
 var UserDetailEventHandler = {
   'click #btnVote' : function (e, t) {
      var id = e.currentTarget.getAttribute("uid");
@@ -300,7 +305,7 @@ var UserDetailEventHandler = {
        Session.set("voteTracker", []);
        $(".form_con").hide();
 	   $(".form_success").show();
-
+       addSubbitSuccessGA();
      });
 
      $("#TB_window .closex").click(function(){
