@@ -19,10 +19,15 @@
 
 <body>
 <div id="dp_wrapper">
-		<!--nav end-->
+  <!--nav end-->
   {{> main}}
 </div>
 </body>
+
+<template name="ga">
+</template>
+
+
 
 <template name="main">
   {{> index}}
@@ -113,5 +118,7 @@ _hmt.push(['_trackEvent','cloudcam','cloudjoin','','']);"></a>
             </div>
         </div>
     </div>
+
+  {{>ga}}
   {{/if}}
 </template>
